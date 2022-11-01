@@ -1,0 +1,21 @@
+Variable Synchronizer               
+---变量同步，用于BT变量和非BT变量的同步，由于代价，尽量同步属性值而非组件等
+   下边同步的非BT的Property，需要设置属性访问器{get;set},方可在配置面板选择出来
+
+ConditionalAboart                      
+---条件终止，用于composite复核节点
+--逻辑：根据节点Aboart的设置，记录所属节点经历过的conditional条件任务，在执行允许该节点Aboart打断的Action任务时候，
+          在其Update末尾执行记录的所有Conditionals，当这些Conditionals都返回sucess的时候，此Action任务被终止，
+          执行task重新跳到节点Aboart此前返回为Failure的任务，后续任务按照BT逻辑
+
+PrioritySelector
+---优先级选择，顺序计算一次
+
+Utillity Selector
+---效能选择，tick更新
+   每个tick计算子任务GetUtility，拥有最大值的任务运行
+
+Selector Evaluator
+---重复判断选择，tick更新
+    运行的task状态要求：1，需要有返回TaskStatus.Running；2，重写GetPriority函数
+    tick更新

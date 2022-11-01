@@ -1,0 +1,26 @@
+
+BehaviorDesigner----行为树
+     编辑逻辑行为
+
+HDRP----高清渲染管线
+
+Log Viewer---调试系统，调试日志打印
+
+AGX Dynamics ---多体和多域动力学数值模拟
+      在 AGX Dynamics 中的可变时间步进器，能快速且实时地模拟出非理想化、不连续（或不平顺）的物理事件，比如撞击。
+      该 SDK 会在每个时间节点解算模型的几何和全局状态，形成一种稳定且不限制时长的物理模拟。
+      配上 Algoryx 的快速直接解算器，AGX Dynamics 能以机械精度来解算大型分散系统，无须额外的处理即可模拟大质量比的“刚性”系统。
+
+MLAgents（Machine Learning Agents）---机器学习代理
+     非玩家智能行为训练
+     https://unity.com/cn/products/machine-learning-agents
+
+Unity SystemGraph---传感图像显示，主要包含光电雷达
+     https://unity.com/cn/features/unity-systemgraph
+
+------工业用途集合包
+{
+     AGX Dynamics ，
+     MLAgents，
+     Unity SystemGraph，
+}
